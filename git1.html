@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+<title>Ewall of Kindness</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel=stylesheet href="style(3).css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<body>  
+<!-- Header -->
+<header class="w3-container w3-theme w3-padding" id="myHeader">
+ 
+
+<div class="w3-bar w3-theme">
+  <a href="#" class="w3-bar-item w3-button w3-padding-16">Home</a>
+ 
+   <button onclick="document.getElementById('id02').style.display='block'" style="width:auto class="login" ">Login</button>
+
+<div id="id02" class="modal2">
+  
+  <form class="modal2-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="lady.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="containerlogin">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit"class="login">Login</button>
+      <label>
+        <input type="checkbox"  checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button class="login" type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw2">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal2 = document.getElementById('id02');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal2) {
+        modal2.style.display = "none";
+    }
+}
+</script>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+.login {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.containerlogin {
+  padding: 16px;
+    color: black;
+}
+
+span.psw2 {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal2 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal2-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
+
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="signup">Sign Up</button>
+        
+    <div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    <form class="modal-content" action="/action_page.php">
+    <div class="containersignup">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn" "signup">Cancel</button>
+        <button type="submit" class="signupbtn" "signup">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+    
+
+  
+  
+  <div class="w3-center">
+ 
+  <h1 class="w3-xxxlarge w3-animate-bottom">E-Wall of Kindness</h1>
+      <h3>Be the reason someone's smile today.</h3>
+    <div class="w3-padding-32">
+ 
+      <button class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey " "getstarted" onclick="document.getElementById('id03').style.display='block'" style="font-weight:900;">Get Started</button>
+    </div>
+  </div>
+</header>
+
+<!-- Modal -->
+<div id="id03" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-top">
+      <header class="w3-container w3-theme-l1"> 
+        <span onclick="document.getElementById('id03').style.display='none'"
+        class="w3-button w3-display-topright">x</span>
+        <h4>Thanks for choosing us to serve needy</h4>
+       
+      </header>
+      <div class="w3-padding">
+       <h5>Sign up or contact us to know more <i class="fa fa-smile-o"></i></h5>
+          <p>To know our Intention  <a class="w3-btn" href="https://prezi.com/dashboard/next/#/details/ybc9lpbwgrgi/"><u>How it Works</u></a> </p>
+      </div>
+      <footer class="w3-container w3-theme-l1">
+        <p ><img src="logo3.jpg" width="20px" height="20px" />Ewall</p>
+      </footer>
+    </div>
+</div>
+    <div class="w3-center">
+  <h2><b>What we do?</b></h2>
+    <p class="w3-large">We believe that stories of people doing good have the power to spur others to take action. With the combined efforts of our volunteers, staff members and partners, we strive to improve the lives of people who need help. <br>We are inspired by the quote "Life is short and we have never too much time for gladdening the hearts of those who are travelling the dark journey with us. Oh be swift to love, make haste to be kind.<br>-Henri Frederic Amiel
+.</p>
+    
+    <p class="w3-large"><b>Contact us to see what you can do to bring about positive change.</b></p>
+</div>
+<br>
+
+    <h3 style=text-align:center><b>How we Help</b></h3>
+  
+<div class="w3-row-padding w3-center w3-margin-top">
+<div class="w3-third">
+  <div class="w3-card w3-container" style="min-height:460px" >
+  <h3>Clothing Drives</h3><br>
+   <img  src="86537348.jpg" class="img-rounded" width="200px" />
+      <h2 style="font-family:monospace" "font-weight: 200" >Treat others as You'd Love to be treated</h2>
+  
+  
+  </div>
+</div>
+    
+
+<div class="w3-third">
+  <div class="w3-card w3-container" style="min-height:460px">
+  <h3  >Donations</h3><br>
+ <img src="donations.jpg" class="img-rounded" width="200px" />
+<h2 style="font-family:monospace" "font-weight: 200">Fighting Inequality</h2>
+    </div>
+</div>
+
+<div class="w3-third">
+  <div class="w3-card w3-container" style="min-height:460px">
+  <h3>Volunteer Opurtunities</h3><br>
+       <img  src="volunteer-fb.jpg" class="img-rounded" width="200px" />
+       <h2 style="font-family:monospace" "font-weight: 200" >Find the purpose by helping others</h2>
+
+  </div>
+</div>
+</div>
+
+
+
+<hr>
+
+<br>
+
+
+
+
+<hr>
+
+<h2 class="w3-center"></h2>
+<div class="w3-content" style="max-width:800px;position:relative">
+
+<img class="mySlides w3-animate-opacity" src="1.jpg" style="width:100%">
+<img class="mySlides w3-animate-opacity" src="2.jpg" style="width:100%">
+<img class="mySlides w3-animate-opacity" src="3.jpg" style="width:100%">
+<img class="mySlides w3-animate-opacity" src="2.jpg" style="width:100%">
+
+<a class="w3-button w3-hover-dark-grey" style="position:absolute;top:45%;left:0;" onclick="plusDivs(-1)">?</a>
+<a class="w3-button w3-hover-dark-grey" style="position:absolute;top:45%;right:0;" onclick="plusDivs(+1)">?</a>
+</div>
+
+
+<hr>
+
+<h2 class="w3-center">Items that can be donated</h2>
+<button onclick="myAccFunc('Demo1')" class="w3-padding-16 w3-theme w3-button w3-block w3-left-align">Basic Necessities</button>
+<div id="Demo1" class="w3-hide">
+  <div class="w3-container">
+    <p>Clothes</p>
+      <p>Food Grains and other Food samples</p>
+      <p>Stationary</p>
+      <p>Umbrellas and Rain coats </p>
+      <p>Utensils</p>
+      
+  </div>
+</div>
+<button onclick="myAccFunc('Demo2')" class="w3-padding-16 w3-theme w3-button w3-block w3-left-align">Electronic and other media appliances</button>
+<div id="Demo2" class="w3-hide">
+  <a href="#" class="w3-button w3-block w3-left-align">old mobiles</a>
+  <a href="#" class="w3-button w3-block w3-left-align">watches</a>
+  <a href="#" class="w3-button w3-block w3-left-align">Televisions and Computers</a>
+</div>
+<button onclick="myAccFunc('Demo3')" class="w3-padding-16 w3-theme w3-button w3-block w3-left-align">Monitory Donations</button>
+<div id="Demo3" class="w3-hide w3-black">
+  <div class="w3-container">
+   
+    <img src="paytm.png" style="width:5%;" class="w3-animate-zoom">
+    <p>Paytm:  <a>9666222384</a></p><br/>
+     
+       <img src="pe.jpg" style="width:5%;" class="w3-animate-zoom" />
+       
+    <p>Phonepe:    <a>9949585875</a></p>
+    
+       <img src="gpay.png" style="width:5%;" class="w3-animate-zoom" />
+<p>Google pay:   <a>8897011333</a></p>
+      
+  </div>
+</div>
+
+<hr>
+<h2 class="w3-center"></h2>
+<div class="w3-border">
+<div class="w3-bar w3-theme">
+  <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openCity(event,'London')">Login</button>
+  <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openCity(event,'Paris')">Donation Form</button>
+  
+</div>
+
+<div id="London" class="w3-container city w3-animate-opacity">
+    <h2>Thanks for making up till here!!!</h2>
+    <h3><b>Are You a New visitor?</b> </h3>
+    <h4><b>Pls Login before proceeding</b></h4>
+    <button onclick="document.getElementById('id02').style.display='block'" style="width:auto class="login";">Login</button>
+</div>
+
+<div id="Paris" class="w3-container city w3-animate-opacity">
+  <h2>Donation Form</h2>
+    <p> Specify the item to be donated :</p><div class="w3-center">
+  <div class="w3-dropdown-hover">
+    <button class="w3-button w3-theme">Items<i class="fa fa-caret-down"></i></button>
+    <div class="w3-dropdown-content w3-bar-block w3-border">
+      <a href="#" class="w3-bar-item w3-button">Clothes</a>
+      <a href="#" class="w3-bar-item w3-button">Food</a>
+      <a href="#" class="w3-bar-item w3-button">Utensils</a>
+    
+    </div>
+  </div>
+</div>
+      <p>Mention if any other </p><input type=text name=any />
+    <p>Day you are comfortable so that volunteers reach out to your place  :</p><input type="date" />
+    <input type=submit class=btn btn-info />
+</div>
+
+
+</div>
+
+
+
+<!-- Footer -->
+<footer class="w3-container w3-theme-dark w3-padding-16">
+  <h3></h3>
+ <div class="icon-bar">
+  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+  <a href="#" class="google"><i class="fa fa-google"></i></a> 
+  <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+  <a href="#" class="youtube"><i class="fa fa-youtube"></i></a> 
+</div>
+  <div style="position:relative;bottom:55px;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-theme-light w3-padding">Go To Top</span>    
+    <a class="w3-text-white" href="#myHeader"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+      
+  </div>
+    <a href="#"><i class="fa-fa-facebook"></i></a>
+ <br/>
+    <h4>Follow Us</h4>
+</footer>
+
+<!-- Script for Sidebar, Tabs, Accordions, Progress bars and slideshows -->
+<script>
+// Side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "100%";
+  x.style.fontSize = "40px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+// Tabs
+function openCity(evt, cityName) {
+  var i;
+  var x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  var activebtn = document.getElementsByClassName("testbtn");
+  for (i = 0; i < x.length; i++) {
+    activebtn[i].className = activebtn[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-dark-grey";
+}
+
+var mybtn = document.getElementsByClassName("testbtn")[0];
+mybtn.click();
+
+// Accordions
+function myAccFunc(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// Slideshows
+var slideIndex = 1;
+
+function plusDivs(n) {
+  slideIndex = slideIndex + n;
+  showDivs(slideIndex);
+}
+
+function showDivs(n) {
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
+showDivs(1);
+
+// Progress Bars
+function move() {
+  var elem = document.getElementById("myBar");   
+  var width = 5;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width == 100) {
+      clearInterval(id);
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+      elem.innerHTML = width * 1  + '%';
+    }
+  }
+}
+</script>
+
+</body>
+</html>
